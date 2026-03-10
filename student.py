@@ -7,17 +7,17 @@ class person:
         self.name = name
 
 #student class inherits from person
-class Student(Person):
+class Student(person):
     def __init__(self, student_id, name, grades):
         super().__init__(name)
         self.student_id = student_id
         self.grades = grades
 
-def average(self):
-    return calculated_average(self.grades)
+    def average(self):
+        return calculate_average(self.grades)
 
-def letter_grade(self):
-    return assign_letter_grade(self.average())
+    def letter_grade(self):
+        return assign_letter_grade(self.average())
 
-def display(self):
-    return f"{self.student_id} - {self.name} | Avg: {self.average(): .2f} | Grade: {self.letter_grade()}"
+    def display(self):
+        return f"{self.student_id} - {self.name} | Avg: {self.average(): .2f} | Grade: {self.letter_grade()}"

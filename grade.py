@@ -2,7 +2,7 @@
 import re
 
 #validating student ids
-def vaildate_student_id(student_id):
+def validate_student_id(student_id):
     pattern = r"^S\d{3}$"
     return re.match(pattern, student_id)is not None
 
@@ -12,7 +12,7 @@ def validate_name(name):
     return (pattern, name) is not None
 
 #calculating the average score
-def calculate_avaerage(grades):
+def calculate_average(grades):
     return sum(grades) / len(grades)
 
 #converting score to letter grade

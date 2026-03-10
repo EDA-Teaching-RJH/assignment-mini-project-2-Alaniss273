@@ -1,0 +1,15 @@
+S001 - Bailey Smith | Avg:  84.33 | Grade: B
+S002 - Lucy Brown | Avg:  91.67 | Grade: A
+S003 - Clark Jones | Avg:  66.67 | Grade: C
+S004 - Josh Simmons | Avg:  53.00 | Grade: D
+S005 - Daniel Harper | Avg:  35.33 | Grade: F
+S006 - Sophie Benette | Avg:  85.33 | Grade: A
+S007 - Lucas Turner | Avg:  41.33 | Grade: E
+S008 - Ryan Mitchell | Avg:  85.67 | Grade: A
+S009 - Oliver Parker | Avg:  54.33 | Grade: D
+S010 - Ethan Collins | Avg:  82.00 | Grade: B
+S011 - Grace Morgan | Avg:  35.33 | Grade: F
+S012 - Nathan Hughes | Avg:  63.33 | Grade: C
+S013 - Chloe Foster | Avg:  90.33 | Grade: A
+S014 - Liam Dawson | Avg:  91.67 | Grade: A
+S015 - Megan Brooks | Avg:  45.33 | Grade: E

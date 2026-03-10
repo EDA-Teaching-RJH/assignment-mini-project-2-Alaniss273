@@ -1,8 +1,8 @@
 #This is the file i/o, it reads the strudent's names from the csv file
 import csv
 
-def read_students(filenmane):
-    students - []
+def read_students(filename):
+    students = []
     with open(filename, "r") as file:
         reader = csv.reader(file)
         for row in reader:
@@ -10,7 +10,7 @@ def read_students(filenmane):
             name = row[1]
             grades = list(map(int, row[2:]))
             students.append((student_id, name, grades))
-    return student
+    return students
 
 #writing the results to the txt file
 def write_report(filename, students):
