@@ -36,10 +36,12 @@ def class_average(students):
     total = sum(s.average() for s in students)
     return total / len(students)
 
+#using lambda to tell the function sorted() to sort students by the average score
 def top_three_students(students):
     sorted_students = sorted(students, key=lambda s: s.average(), reverse=True)
     return sorted_students[:3]
 
+#sorts students by the average grade lowest to highest
 def bottom_three_students(students):
     sorted_students = sorted(students, key=lambda s: s.average())
     return sorted_students[:3]

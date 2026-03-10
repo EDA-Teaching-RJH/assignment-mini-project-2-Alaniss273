@@ -1,7 +1,7 @@
 #import required modules
 from student import Student
 from filehandler import read_students, write_report
-from grade import validate_student_id, validate_name
+from grade import validate_student_id, validate_name, class_average, top_three_students, bottom_three_students
 
 #function to convert CSV data into Students
 def create_students(data):
@@ -34,6 +34,24 @@ def main():
     #display each student's information
     for s in students:
         print(s.display())
+
+    #ask if class average is needed
+    choice = input("\nDo you need to see the class average?")
+
+    if choice.lower() == "yes":
+        avg = class_average(students)
+        print(f"\nClass Average: {avg:.2f}")
+
+    #ask if top and bottom 3 students is needed
+    choice = input("\nDo you need the top and bottom 3 student's grades?")
+    if choice.lower() == "yes":
+        print("\nTop 3 students:")
+        for s in top_three_students(students):
+            print(s.display())
+
+        print("\nBottom 3 students:")
+        for s in bottom_three_students(students):
+            print(s.display())
 
     #write results to report txt file
     write_report("report.txt", students)
