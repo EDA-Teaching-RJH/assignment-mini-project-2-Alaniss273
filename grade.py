@@ -45,3 +45,15 @@ def top_three_students(students):
 def bottom_three_students(students):
     sorted_students = sorted(students, key=lambda s: s.average())
     return sorted_students[:3]
+
+#calculating how many students got the same grade
+def grade_distribution(student):
+    distribution = {}
+    for s in student:
+        grade = s.letter_grade()
+        if grade in distribution:
+            distribution[grade] += 1
+        else:
+            distribution[grade] = 1
+    return distribution
+
