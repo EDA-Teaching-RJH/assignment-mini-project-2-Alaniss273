@@ -29,3 +29,17 @@ def assign_letter_grade(avg):
         return "E"
     else:
         return "F"
+    
+def class_average(students):
+    if not students:
+        return 0
+    total = sum(s.average() for s in students)
+    return total / len(students)
+
+def top_three_students(students):
+    sorted_students = sorted(students, key=lambda s: s.average(), reverse=True)
+    return sorted_students[:3]
+
+def bottom_three_students(students):
+    sorted_students = sorted(students, key=lambda s: s.average())
+    return sorted_students[:3]
