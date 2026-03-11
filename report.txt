@@ -15,5 +15,6 @@ S014 - Liam Dawson | Avg:  91.75 | Grade: A
 S015 - Megan Brooks | Avg:  45.25 | Grade: E
 S016 - Clark Jackson | Avg:  23.00 | Grade: F
 S017 - Ben Peterson | Avg:  61.25 | Grade: C
+S018 - Charlie Poxx | Avg:  70.00 | Grade: B
 S019 - Zara Carlton | Avg:  77.75 | Grade: B
 S020 - Ellie Watson | Avg:  74.25 | Grade: B
