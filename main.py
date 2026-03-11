@@ -31,37 +31,56 @@ def main():
     data = read_students("students.csv")
     students = create_students(data)
 
-    #display each student's information
-    for s in students:
-        print(s.display())
-
-    #ask if class average is needed
-    choice = input("\nDo you need to see the class average?")
-
-    if choice.lower() == "yes":
-        avg = class_average(students)
-        print(f"\nClass Average: {avg:.2f}")
-
-    #ask if top and bottom 3 students is needed
-    choice = input("\nDo you need the top and bottom 3 student's grades?")
-    if choice.lower() == "yes":
-        print("\nTop 3 students:")
-        for s in top_three_students(students):
-            print(s.display())
-
-        print("\nBottom 3 students:")
-        for s in bottom_three_students(students):
-            print(s.display())
     
-    #grade distribution
-    choice = input("\nDo you want to see the grade distribution?")
-    if choice.lower() == "yes":
-        distribution = grade_distribution(students)
-        print("\nGrade distribution:")
-        grades = ["A", "B", "C", "D", "E", "F"]
-        for g in grades:
-            print(f"{g}: {distribution.get(g, 0)}")
+    #creating a menu for a list of questions about the students' grades
+    while True:
+        print("\n--Student Grade Analyser--")
+        print("1. Show all students")
+        print("2. Show class average")
+        print("3. Show top 3 students")
+        print("4. Show bottom 3 students")
+        print("5. Show grade distribution")
+        print("6. Exit")
+
+        choice = input("Choose an option: ")
+
+        #display each student's information
+        if choice == "1":
+            for s in students:
+                print(s.display())
     
+        #class average 
+        if choice == "2":
+            avg = class_average(students)
+            print(f"\nClass Average: {avg:.2f}")
+
+        #top 3 students 
+        elif choice == "3":
+            print("\nTop 3 students:")
+            for s in top_three_students(students):
+                print(s.display())
+
+        #bottom 3 students
+        elif choice == "4":
+            print("\nBottom 3 students:")
+            for s in bottom_three_students(students):
+                print(s.display())
+    
+        #grade distribution
+        elif choice == "5":
+            distribution = grade_distribution(students)
+            print("\nGrade distribution:")
+            grades = ["A", "B", "C", "D", "E", "F"]
+            for g in grades:
+                print(f"{g}: {distribution.get(g, 0)}")
+
+        #exit 
+        elif choice == "6":
+            print("Exiting...")
+            break
+
+        else:
+            print("Invalid choice, please try again.")
 
     #write results to report txt file
     write_report("report.txt", students)
