@@ -3,7 +3,7 @@ from grade import calculate_average, assign_letter_grade, validate_student_id
 
 #test average calculation
 def test_average():
-    assert calculate_average([80, 90, 100]) == 90
+    assert calculate_average([60, 70, 80, 90]) == 75
 
 #test letter grade assignment
 def test_letter_grade():

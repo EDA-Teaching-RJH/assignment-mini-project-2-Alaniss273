@@ -50,7 +50,7 @@ def main():
                 print(s.display())
     
         #class average 
-        if choice == "2":
+        elif choice == "2":
             avg = class_average(students)
             print(f"\nClass Average: {avg:.2f}")
 
