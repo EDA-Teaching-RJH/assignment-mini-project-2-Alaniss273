@@ -57,3 +57,9 @@ def grade_distribution(student):
             distribution[grade] = 1
     return distribution
 
+#creating a histogram to visually show how many students got the same grade
+def print_histogram(distribution):
+    print("\nGrade Distribution Histogram:")
+    for grade, count in distribution.items():
+        stars = "*" * count 
+        print (f"{grade}: {stars} ({count})")
