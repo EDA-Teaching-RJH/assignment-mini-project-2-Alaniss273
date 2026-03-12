@@ -1,7 +1,7 @@
 #import required modules
 from student import Student
 from filehandler import read_students, write_report
-from grade import validate_student_id, validate_name, class_average, top_three_students, bottom_three_students, grade_distribution
+from grade import validate_student_id, validate_name, class_average, top_three_students, bottom_three_students, grade_distribution, print_histogram 
 
 #function to convert CSV data into Students
 def create_students(data):
@@ -73,6 +73,9 @@ def main():
             grades = ["A", "B", "C", "D", "E", "F"]
             for g in grades:
                 print(f"{g}: {distribution.get(g, 0)}")
+            
+            #histogram
+            print_histogram(distribution)
 
         #exit 
         elif choice == "6":
