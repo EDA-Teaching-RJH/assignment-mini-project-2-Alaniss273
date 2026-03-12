@@ -15,3 +15,4 @@ From this lecture, I have also used inheritance in student.py which allows prope
 Extra things included:
 Dictionaries - 
 I used to analyse grade distrinution, which stores each letter grade as a key and the number of students which have that grade as a value, and as the program runs through each student, the dictionary updates the count for each grade. This is useful as it makes it efficient to track and summarise the distribution of grades across the class.
+Another extra detail I included was using a histogram for the grade distribution, what this did was included stars next to the letter grade, so you can visually see how many people recieved the same grade as well as the number of people. I like this feature as it is quite simple but makes my program a bit different.
